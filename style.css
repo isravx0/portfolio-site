@@ -741,3 +741,84 @@ footer{
 @media (prefers-reduced-motion: reduce){
   *, *::before, *::after{ animation:none !important; transition:none !important; scroll-behavior:auto !important; }
 }
+/* =========================
+   Mobile fixes (paste LAST)
+   ========================= */
+
+/* Stop accidental horizontal clipping from big text */
+html, body { overflow-x: clip; }
+
+/* HERO: give real side padding + prevent headline clipping */
+.hero { padding-inline: var(--pad); }
+
+.hero-content{
+  width: 100%;
+  max-width: 980px;
+  margin-inline: auto;
+  padding-inline: clamp(10px, 4vw, 18px); /* key: keeps text away from edges */
+}
+
+/* Make the headline wrap nicely instead of overflowing */
+.hero h1{
+  max-width: 18ch;
+  margin-inline: auto;
+  text-wrap: balance;          /* modern browsers */
+  overflow-wrap: anywhere;     /* safety */
+  word-break: normal;
+  hyphens: auto;
+}
+
+/* Subtitle letter spacing is too wide on phones */
+@media (max-width: 480px){
+  .hero-subtitle{ letter-spacing: .18em; }
+}
+
+/* STATS: never force 3 tiny columns on mobile */
+.hero-stats{
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+@media (max-width: 640px){
+  .hero-stats{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+}
+
+@media (max-width: 420px){
+  .hero-stats{
+    grid-template-columns: 1fr;
+    max-width: 420px;
+  }
+}
+
+/* Cards: make them feel less cramped */
+.hero-stat{
+  padding: clamp(14px, 3.5vw, 16px);
+}
+.hero-stat-number{
+  font-size: clamp(1.1rem, 4vw, 1.25rem);
+}
+
+/* Buttons: stack cleanly and full width on small screens */
+@media (max-width: 640px){
+  .cta-buttons{
+    flex-direction: column;
+    align-items: stretch;
+    max-width: 420px;
+    margin-inline: auto;
+  }
+  .cta-button, .btn{
+    width: 100%;
+  }
+}
+
+/* Header: slightly tighter on small screens */
+@media (max-width: 640px){
+  header{
+    width: min(96%, var(--max));
+    padding: 10px 12px;
+    border-radius: 18px;
+    top: 12px;
+  }
+}
