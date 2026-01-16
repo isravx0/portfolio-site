@@ -443,6 +443,7 @@ nav{
 }
 .project-card {
   grid-column: span 12;
+  overflow: hidden;
   padding: clamp(18px, 3vw, 22px);
   border-radius: var(--radius-lg);
   background: rgba(255,255,255,.05);
@@ -464,16 +465,19 @@ nav{
 }
 
 .project-header{
-  display:flex;
-  align-items:center;
-  gap: 10px;
-  margin-bottom: 10px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 10px 10px;
+  min-width: 0;
 }
 .project-icon{ font-size: 1.6rem; }
 .project-title{
-  color: var(--text);
-  font-size: 1.2rem;
-  font-weight: 850;
+  flex: 1 1 auto;
+  min-width: 0;              /* KEY for flex overflow */
+  overflow-wrap: anywhere;   /* breaks long words/strings */
+  word-break: normal;
+  hyphens: auto;
+  line-height: 1.2;
 }
 .project-summary{
   margin: 10px 0 12px;
@@ -789,6 +793,12 @@ html, body { overflow-x: clip; }
   .hero-stats{
     grid-template-columns: 1fr;
     max-width: 420px;
+  }
+  .project-title{ 
+    font-size: 1.05rem; 
+  }
+  .project-card {
+    padding-top: 15%;
   }
 }
 
