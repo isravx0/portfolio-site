@@ -797,6 +797,9 @@ html, body { overflow-x: clip; }
   .project-title{ 
     font-size: 1.05rem; 
   }
+  .project-card {
+    padding-top: 20%;
+  }
 }
 
 /* Cards: make them feel less cramped */
