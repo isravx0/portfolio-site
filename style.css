@@ -484,6 +484,7 @@ nav{
   margin-top: clamp(10px, 3vw, 16px);
   color: rgba(233,236,241,.72);
   line-height: 1.7;
+  padding-top: 55px;
 }
 .project-highlights{
   margin: 0 0 12px 1.05rem;
