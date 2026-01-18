@@ -60,19 +60,19 @@
         function updateActiveMenuItem() {
             const sections = document.querySelectorAll('section[id]');
             const navLinks = document.querySelectorAll('.nav-links a, .mobile-nav a');
-            
+
             let currentSection = '';
-            const scrollPos = window.pageYOffset + 100;
-            
+
+            const scrollPos = window.scrollY + window.innerHeight / 2;
+
             sections.forEach(section => {
                 const sectionTop = section.offsetTop;
-                const sectionHeight = section.offsetHeight;
-                
-                if (scrollPos >= sectionTop && scrollPos < sectionTop + sectionHeight) {
+
+                if (scrollPos >= sectionTop) {
                     currentSection = section.getAttribute('id');
                 }
             });
-            
+
             navLinks.forEach(link => {
                 link.classList.remove('active');
                 if (link.getAttribute('href') === `#${currentSection}`) {
@@ -80,6 +80,7 @@
                 }
             });
         }
+
 
         window.addEventListener('scroll', updateActiveMenuItem);
         window.addEventListener('load', updateActiveMenuItem);
