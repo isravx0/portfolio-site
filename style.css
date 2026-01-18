@@ -719,24 +719,6 @@ footer{
 
   .hero-stat{ padding: 14px 12px; }
 }
-
-@media (max-width: 640px){
-  header{ top: 12px; border-radius: 18px; }
-
-  .cta-buttons{
-    flex-direction: column;
-    align-items: center;
-  }
-  .cta-button{ width: min(100%, 420px); }
-
-  .feature-visual{ min-height: 200px; }
-
-  .social-links a{
-    width: 44px;
-    height: 44px;
-  }
-}
-
 @media (max-width: 380px){
   .hero-subtitle{ letter-spacing: .18em; }
   .mobile-menu-toggle{ padding: 8px; }
@@ -773,20 +755,40 @@ html, body { overflow-x: clip; }
   hyphens: auto;
 }
 
-/* Subtitle letter spacing is too wide on phones */
-@media (max-width: 480px){
-  .hero-subtitle{ letter-spacing: .18em; }
-}
-
 /* STATS: never force 3 tiny columns on mobile */
 .hero-stats{
   grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+/* Subtitle letter spacing is too wide on phones */
+@media (max-width: 480px){
+  .hero-subtitle{ letter-spacing: .18em; }
 }
 
 @media (max-width: 640px){
   .hero-stats{
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 12px;
+  }
+   .cta-buttons{
+    flex-direction: column;
+    align-items: stretch;
+    max-width: 420px;
+    margin-inline: auto;
+  }
+  header{
+    width: min(96%, var(--max));
+    padding: 10px 12px;
+    border-radius: 18px;
+    top: 12px;
+  }
+  .cta-button{ width: min(100%, 420px); }
+
+  .feature-visual{ min-height: 200px; }
+
+  .social-links a{
+    width: 44px;
+    height: 44px;
   }
 }
 
@@ -799,7 +801,10 @@ html, body { overflow-x: clip; }
     font-size: 1.05rem; 
   }
   .project-card {
-    padding-top: 20%;
+    padding-top: 10%;
+  }
+  .project-summary{
+    padding-top: 20px;
   }
 }
 
@@ -809,27 +814,4 @@ html, body { overflow-x: clip; }
 }
 .hero-stat-number{
   font-size: clamp(1.1rem, 4vw, 1.25rem);
-}
-
-/* Buttons: stack cleanly and full width on small screens */
-@media (max-width: 640px){
-  .cta-buttons{
-    flex-direction: column;
-    align-items: stretch;
-    max-width: 420px;
-    margin-inline: auto;
-  }
-  .cta-button, .btn{
-    width: 100%;
-  }
-}
-
-/* Header: slightly tighter on small screens */
-@media (max-width: 640px){
-  header{
-    width: min(96%, var(--max));
-    padding: 10px 12px;
-    border-radius: 18px;
-    top: 12px;
-  }
 }
