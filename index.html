@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Israa Almahmoud — Full‑Stack Developer</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+		rel="stylesheet" />
 	<!-- Reuse existing style and scripts -->
 	<link href="style.css" rel="stylesheet" />
 </head>
+
 <body>
 	<!-- Background effects from template -->
 	<div class="neural-background"></div>
@@ -32,17 +35,20 @@
 				<svg class="logo-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
 					<defs>
 						<linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-							<stop offset="0%" style="stop-color:#e0a3ff"/>
-							<stop offset="50%" style="stop-color:#ff69b4"/>
-							<stop offset="100%" style="stop-color:#9370db"/>
+							<stop offset="0%" style="stop-color:#e0a3ff" />
+							<stop offset="50%" style="stop-color:#ff69b4" />
+							<stop offset="100%" style="stop-color:#9370db" />
 						</linearGradient>
 					</defs>
 					<circle cx="50" cy="30" r="8" fill="url(#logoGradient)" opacity="0.8"></circle>
 					<circle cx="30" cy="60" r="6" fill="url(#logoGradient)" opacity="0.6"></circle>
 					<circle cx="70" cy="65" r="7" fill="url(#logoGradient)" opacity="0.7"></circle>
-					<line x1="50" y1="30" x2="30" y2="60" stroke="url(#logoGradient)" stroke-width="2" opacity="0.6"></line>
-					<line x1="50" y1="30" x2="70" y2="65" stroke="url(#logoGradient)" stroke-width="2" opacity="0.6"></line>
-					<line x1="30" y1="60" x2="70" y2="65" stroke="url(#logoGradient)" stroke-width="2" opacity="0.6"></line>
+					<line x1="50" y1="30" x2="30" y2="60" stroke="url(#logoGradient)" stroke-width="2" opacity="0.6">
+					</line>
+					<line x1="50" y1="30" x2="70" y2="65" stroke="url(#logoGradient)" stroke-width="2" opacity="0.6">
+					</line>
+					<line x1="30" y1="60" x2="70" y2="65" stroke="url(#logoGradient)" stroke-width="2" opacity="0.6">
+					</line>
 				</svg>
 				<span>Israa Almahmoud</span>
 			</a>
@@ -51,7 +57,8 @@
 				<li><a href="#projects">Projects</a></li>
 				<li><a href="#experience">Experience</a></li>
 				<li><a href="#contact">Contact</a></li>
-				<li><a href="https://github.com/isravx0" target="_blank" class="external-link" rel="noopener">GitHub</a></li>
+				<li><a href="https://github.com/isravx0" target="_blank" class="external-link" rel="noopener">GitHub</a>
+				</li>
 			</ul>
 			<div class="mobile-menu-toggle" aria-label="Open mobile navigation" role="button" tabindex="0">
 				<div class="hamburger-line"></div>
@@ -77,8 +84,9 @@
 				<p>
 					Hi, I’m <strong>Israa Almahmoud</strong><br>
 					A full-stack developer with a strong interest in both frontend and backend development.
-					I enjoy coding not only as a profession, but also as a hobby, and I’m passionate about building websites and applications.
-					Currently, I work as a programmer at 
+					I enjoy coding not only as a profession, but also as a hobby, and I’m passionate about building
+					websites and applications.
+					Currently, I work as a programmer at
 					<a href="https://site.sba.nl/" target="_blank" rel="noopener noreferrer">SBA</a>,
 					where I focus on developing clean, reliable, and well-structured solutions.
 
@@ -107,72 +115,108 @@
 	<!-- Skills -->
 	<section class="features" id="skills">
 		<div class="features-container">
-			<h2 class="section-title">Skills & Tech Stack</h2>
+			<h2 class="section-title">Skills & Tech Stack</em></h2>
+			<span class="title-line"></span>
 
-			<div class="diagonal-grid">
-
+			<div class="skills-grid">
 				<!-- Frontend -->
-				<div class="feature-row">
-					<div class="feature-content glass">
-						<h3>Frontend</h3>
-						<p>
-							JavaScript (ES6+), HTML5, CSS3, <strong>Tailwind</strong>, <strong>Bootstrap</strong>.
-							Building responsive UIs with <strong>React</strong> and working with component-based architecture,
-							state management, accessibility, and performance.
-						</p>
+				<div class="skill-card span-6 card-rose">
+					<div class="card-icon">🌸</div>
+					<h3 class="card-label label-rose">Frontend</h3>
+					<p>
+						JavaScript (ES6+), HTML5, CSS3, <strong>Tailwind</strong>, <strong>Bootstrap</strong>.
+						Building responsive UIs with <strong>React</strong> and working with component-based architecture,
+						state management, accessibility, and performance.
+					</p>
+					<div class="tags">
+						<span class="tag tag-rose">JavaScript ES6+</span>
+						<span class="tag tag-rose">React</span>
+						<span class="tag tag-rose">HTML5</span>
+						<span class="tag tag-rose">CSS3</span>
+						<span class="tag tag-orchid">Tailwind</span>
+						<span class="tag tag-orchid">Bootstrap</span>
 					</div>
-					<div class="feature-visual glass" style="background-image:url('images/frontend.png')"></div>
 				</div>
 
 				<!-- Backend -->
-				<div class="feature-row">
-					<div class="feature-content glass">
-						<h3>Backend</h3>
-						<p>
-							<strong>PHP</strong> with <strong>Laravel</strong> and <strong>CodeIgniter</strong>, plus <strong>.NET / C#</strong> and <strong>Node.js (Express)</strong>.
-							Strong focus on <strong>OOP</strong>, building <strong>REST APIs</strong>, and implementing
-							<strong>authentication & authorization</strong>.
-						</p>
+				<div class="skill-card span-6 card-orchid">
+					<div class="card-icon">⚙️</div>
+					<h3 class="card-label label-orchid">Backend</h3>
+					<p>
+						<strong>PHP</strong> with <strong>Laravel</strong> and <strong>CodeIgniter</strong>, plus <strong>.NET / C#</strong> and <strong>Node.js (Express)</strong>.
+						Strong focus on <strong>OOP</strong>, building <strong>REST APIs</strong>, and implementing
+						<strong>authentication & authorization</strong>.
+					</p>
+					<div class="tags">
+						<span class="tag tag-orchid">PHP</span>
+						<span class="tag tag-orchid">Laravel</span>
+						<span class="tag tag-orchid">CodeIgniter</span>
+						<span class="tag tag-denim">.NET / C#</span>
+						<span class="tag tag-denim">Node.js</span>
+						<span class="tag tag-denim">Express</span>
+						<span class="tag tag-rose">REST APIs</span>
 					</div>
-					<div class="feature-visual glass" style="background-image:url('images/backend.png')"></div>
 				</div>
 
-				<!-- Data, Database & Analysis -->
-				<div class="feature-row">
-					<div class="feature-content glass">
-						<h3>Data, Databases & Analysis</h3>
-						<p>
-							<strong>SQL</strong> (with HeidiSQL), database design, migrations, and <strong>data modeling</strong>
-							(including <strong>ERD</strong>). Data analysis using <strong>Python</strong> and <strong>NumPy</strong>.
-						</p>
+				<!-- Data & Databases -->
+				<div class="skill-card span-6 card-denim">
+					<div class="card-icon">🗄️</div>
+					<h3 class="card-label label-denim">Data & Databases</h3>
+					<p>
+						<strong>SQL</strong> (with HeidiSQL), database design, migrations, and <strong>data modeling</strong>
+						(including <strong>ERD</strong>). Data analysis using <strong>Python</strong> and <strong>NumPy</strong>.
+					</p>
+					<div class="tags">
+						<span class="tag tag-denim">SQL</span>
+						<span class="tag tag-denim">HeidiSQL</span>
+						<span class="tag tag-denim">ERD</span>
+						<span class="tag tag-orchid">Python</span>
+						<span class="tag tag-orchid">NumPy</span>
+						<span class="tag tag-rose">Data Modelling</span>
 					</div>
-					<div class="feature-visual glass" style="background-image:url('images/data-analysis.png')"></div>
 				</div>
 
-				<!-- Tools, Workflow & Deployment -->
-				<div class="feature-row">
-					<div class="feature-content glass">
-						<h3>Tools, Workflow & Deployment</h3>
-						<p>
-							Git & GitHub, Git Flow, deployment with <strong>FileZilla</strong>, and hosting via <strong>GitHub Pages</strong>.
-							Comfortable with <strong>Scrum</strong>, creating <strong>flowcharts</strong>, documentation, and troubleshooting.
-						</p>
+				<!-- Tools & Workflow -->
+				<div class="skill-card span-6 card-mix">
+					<div class="card-icon">🛠️</div>
+					<h3 class="card-label label-mix">Tools & Workflow</h3>
+					<p>
+						Git & GitHub, Git Flow, deployment with <strong>FileZilla</strong>, and hosting via <strong>GitHub Pages</strong>.
+						Comfortable with <strong>Scrum</strong>, creating <strong>flowcharts</strong>, documentation, and troubleshooting.
+					</p>
+					<div class="tags">
+						<span class="tag tag-rose">Git & GitHub</span>
+						<span class="tag tag-rose">Git Flow</span>
+						<span class="tag tag-orchid">FileZilla</span>
+						<span class="tag tag-orchid">GitHub Pages</span>
+						<span class="tag tag-denim">Scrum</span>
+						<span class="tag tag-denim">Flowcharts</span>
 					</div>
-					<div class="feature-visual glass" style="background-image:url('images/tools-and-deployment.png')"></div>
 				</div>
 
-				<!-- Mobile -->
-				<div class="feature-row">
-					<div class="feature-content glass">
-						<h3>Mobile</h3>
-						<p>
-							Building mobile applications using the <strong>Ionic Framework</strong>, integrating APIs,
-							and delivering responsive cross-platform experiences.
-						</p>
+				<!-- Mobile — full width -->
+				<div class="skill-card wide">
+					<div class="card-stripe"></div>
+					<div class="wide-inner">
+						<div class="wide-text">
+							<div class="card-icon">📱</div>
+							<h3 class="card-label label-teal">Mobile</h3>
+							<p>Delivering smooth, responsive mobile experiences with Ionic — bridging web technologies
+								to native-feeling apps with full API integration.</p>
+							<div class="tags">
+								<span class="tag tag-denim">Ionic Framework</span>
+								<span class="tag tag-denim">API Integration</span>
+								<span class="tag tag-rose">Cross-Platform</span>
+								<span class="tag tag-orchid">Responsive Design</span>
+							</div>
+						</div>
+						<div class="wide-visual">
+							<div class="platform-badge"><span>📱</span>iOS</div>
+							<div class="platform-badge"><span>🤖</span>Android</div>
+							<div class="platform-badge"><span>🌐</span>Web</div>
+						</div>
 					</div>
-					<div class="feature-visual glass" style="background-image:url('images/mobile.png')"></div>
 				</div>
-
 			</div>
 		</div>
 	</section>
@@ -190,7 +234,8 @@
 				</header>
 
 				<p class="project-summary">
-					Full-stack personal finance web application that helps users track income and expenses, analyze financial behavior, and visualize insights through interactive dashboards.
+					Full-stack personal finance web application that helps users track income and expenses, analyze
+					financial behavior, and visualize insights through interactive dashboards.
 				</p>
 
 				<ul class="project-highlights">
@@ -209,8 +254,10 @@
 				</div>
 
 				<div class="project-actions">
-					<a class="btn" href="https://github.com/isravx0/Personal-finance-tracker-backend" target="_blank" rel="noopener">View Backend on GitHub</a>
-					<a class="btn" href="https://github.com/isravx0/Personal-finance-tracker-frontend" target="_blank" rel="noopener">View Frontend on GitHub</a>
+					<a class="btn" href="https://github.com/isravx0/Personal-finance-tracker-backend" target="_blank"
+						rel="noopener">View Backend on GitHub</a>
+					<a class="btn" href="https://github.com/isravx0/Personal-finance-tracker-frontend" target="_blank"
+						rel="noopener">View Frontend on GitHub</a>
 				</div>
 			</article>
 			<!-- Movies Application -->
@@ -219,7 +266,8 @@
 					<h3 class="project-title">Movies Application</h3>
 				</header>
 				<p class="project-summary">
-					Web app to discover movies with search, filtering, and detail pages. Built with a modern frontend and external movie API.
+					Web app to discover movies with search, filtering, and detail pages. Built with a modern frontend
+					and external movie API.
 				</p>
 				<ul class="project-highlights">
 					<li>Search by title/genre, sort by popularity/year</li>
@@ -227,10 +275,12 @@
 					<li>Responsive design and fast client‑side routing</li>
 				</ul>
 				<div class="project-tech">
-					<span>React</span><span>Vue (variant)</span><span>JavaScript</span><span>CSS/Bootstrap</span><span>REST API</span>
+					<span>React</span><span>Vue
+						(variant)</span><span>JavaScript</span><span>CSS/Bootstrap</span><span>REST API</span>
 				</div>
 				<div class="project-actions">
-					<a class="btn" href="https://github.com/isravx0/movie-application" target="_blank" rel="noopener">View on GitHub</a>
+					<a class="btn" href="https://github.com/isravx0/movie-application" target="_blank"
+						rel="noopener">View on GitHub</a>
 				</div>
 			</article>
 
@@ -240,7 +290,8 @@
 					<h3 class="project-title">Solar Panel Simulator</h3>
 				</header>
 				<p class="project-summary">
-					Simulation tool estimating solar energy output and consumption based on number of panels, tilt angle, and location. Provides yearly estimation and break‑even point.
+					Simulation tool estimating solar energy output and consumption based on number of panels, tilt
+					angle, and location. Provides yearly estimation and break‑even point.
 				</p>
 				<ul class="project-highlights">
 					<li>Interactive input & real‑time calculation</li>
@@ -251,7 +302,8 @@
 					<span>Laravel</span><span>PHP</span><span>MySQL</span><span>Charting</span><span>REST API</span>
 				</div>
 				<div class="project-actions">
-					<a class="btn" href="https://github.com/isravx0/solar-simulator" target="_blank" rel="noopener">View on GitHub</a>
+					<a class="btn" href="https://github.com/isravx0/solar-simulator" target="_blank" rel="noopener">View
+						on GitHub</a>
 				</div>
 				<p class="project-note"><strong>Note:</strong> this is an estimation (not 100% accurate).</p>
 			</article>
@@ -263,8 +315,10 @@
 				</header>
 
 				<p class="project-summary">
-					<strong>EN:</strong> A mobile app to manage tasks and build habits, with multilingual support (English, Dutch, Arabic). <em>Still under development.</em><br>
-					<strong>NL:</strong> Een mobiele app om taken te beheren en gewoontes op te bouwen, met meertalige ondersteuning (Engels, Nederlands, Arabisch). <em>Nog in ontwikkeling.</em>
+					<strong>EN:</strong> A mobile app to manage tasks and build habits, with multilingual support
+					(English, Dutch, Arabic). <em>Still under development.</em><br>
+					<strong>NL:</strong> Een mobiele app om taken te beheren en gewoontes op te bouwen, met meertalige
+					ondersteuning (Engels, Nederlands, Arabisch). <em>Nog in ontwikkeling.</em>
 				</p>
 
 				<ul class="project-highlights">
@@ -278,7 +332,8 @@
 				</div>
 
 				<div class="project-actions">
-					<a class="btn" href="https://github.com/isravx0/daily-tasks" target="_blank" rel="noopener">Repository</a>
+					<a class="btn" href="https://github.com/isravx0/daily-tasks" target="_blank"
+						rel="noopener">Repository</a>
 				</div>
 			</article>
 
@@ -375,7 +430,7 @@
 	</section>
 
 
-	
+
 
 	<!-- Contact -->
 	<section class="contact" id="contact">
@@ -383,16 +438,15 @@
 			<div class="contact-info glass">
 				<h3>Get in Touch</h3>
 				<p>
-					Questions or inquiries? You can reach me via the form below or through the following channels:
+					Questions or inquiries? You can reach me via the form or through the following channels:
 				</p>
 				<div class="social-links">
-					<a href="mailto:israa.almahmoud23@gmail.com" class="glass" aria-label="Email">
-						<img class="logo-icon glass" src="images/email.png" alt="Email" />
-					</a>
-					<a href="https://github.com/isravx0" target="_blank" rel="noopener" class="glass" aria-label="GitHub">
+					<a href="https://github.com/isravx0" target="_blank" rel="noopener" class="glass"
+						aria-label="GitHub">
 						<img class="logo-icon glass" src="images/github.png" alt="GitHub" />
 					</a>
-					<a href="https://www.linkedin.com/in/israa-almahmoud/" target="_blank" rel="noopener" class="glass" aria-label="LinkedIn">
+					<a href="https://www.linkedin.com/in/israa-almahmoud/" target="_blank" rel="noopener" class="glass"
+						aria-label="LinkedIn">
 						<img class="logo-icon glass" src="images/linkedin.jpg" alt="LinkedIn" />
 					</a>
 				</div>
@@ -444,4 +498,5 @@
 	</script>
 	<script src="scripts.js"></script>
 </body>
+
 </html>
