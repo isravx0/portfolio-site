@@ -25,8 +25,8 @@ The site is currently **in progress 🚧**, but you can already see the structur
 - [x] Base design implemented  
 - [x] Sections structured  
 - [x] Final styling & polish  
-- [ ] Responsive tweaks  
-- [ ] Deployment  
+- [x] Responsive tweaks  
+- [x] Deployment  
 
 ---
 
