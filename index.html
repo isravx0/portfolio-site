@@ -1,499 +1,345 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Israa Almahmoud — Full‑Stack Developer</title>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-		rel="stylesheet" />
-	<!-- Reuse existing style and scripts -->
-	<link href="style.css" rel="stylesheet" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Israa Almahmoud, a full-stack developer creating clear and reliable web and mobile products." />
+  <meta name="theme-color" content="#080a12" />
+  <title>Israa Almahmoud | Full-Stack Developer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
+<body data-page="home">
+  <a class="skip-link" href="#main">Skip to content</a>
 
-<body>
-	<!-- Background effects from template -->
-	<div class="neural-background"></div>
-	<div class="geometric-shapes">
-		<div class="shape"></div>
-		<div class="shape"></div>
-		<div class="shape"></div>
-		<div class="shape"></div>
-	</div>
-	<div class="neural-lines">
-		<div class="neural-line"></div>
-		<div class="neural-line"></div>
-		<div class="neural-line"></div>
-	</div>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+  <div class="background-grid" aria-hidden="true"></div>
+  <div class="spotlight" id="spotlight" aria-hidden="true"></div>
 
-	<!-- Header -->
-	<header class="glass">
-		<nav>
-			<a href="#home" class="logo">
-				<svg class="logo-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-					<defs>
-						<linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-							<stop offset="0%" style="stop-color:#e0a3ff" />
-							<stop offset="50%" style="stop-color:#ff69b4" />
-							<stop offset="100%" style="stop-color:#9370db" />
-						</linearGradient>
-					</defs>
-					<circle cx="50" cy="30" r="8" fill="url(#logoGradient)" opacity="0.8"></circle>
-					<circle cx="30" cy="60" r="6" fill="url(#logoGradient)" opacity="0.6"></circle>
-					<circle cx="70" cy="65" r="7" fill="url(#logoGradient)" opacity="0.7"></circle>
-					<line x1="50" y1="30" x2="30" y2="60" stroke="url(#logoGradient)" stroke-width="2" opacity="0.6">
-					</line>
-					<line x1="50" y1="30" x2="70" y2="65" stroke="url(#logoGradient)" stroke-width="2" opacity="0.6">
-					</line>
-					<line x1="30" y1="60" x2="70" y2="65" stroke="url(#logoGradient)" stroke-width="2" opacity="0.6">
-					</line>
-				</svg>
-				<span>Israa Almahmoud</span>
-			</a>
-			<ul class="nav-links">
-				<li><a href="#skills">Skills</a></li>
-				<li><a href="#projects">Projects</a></li>
-				<li><a href="#experience">Experience</a></li>
-				<li><a href="#contact">Contact</a></li>
-				<li><a href="https://github.com/isravx0" target="_blank" class="external-link" rel="noopener">GitHub</a>
-				</li>
-			</ul>
-			<div class="mobile-menu-toggle" aria-label="Open mobile navigation" role="button" tabindex="0">
-				<div class="hamburger-line"></div>
-				<div class="hamburger-line"></div>
-				<div class="hamburger-line"></div>
-			</div>
-		</nav>
-		<div class="mobile-nav" role="dialog" aria-label="Mobile navigation">
-			<a href="#skills">Skills</a>
-			<a href="#projects">Projects</a>
-			<a href="#experience">Experience</a>
-			<a href="#contact">Contact</a>
-			<a href="https://github.com/isravx0" target="_blank" class="external-link" rel="noopener">GitHub</a>
-		</div>
-	</header>
+  <header class="site-header" id="site-header">
+    <nav class="nav-shell" aria-label="Primary navigation">
+      <a class="brand" href="index.html#home" aria-label="Israa Almahmoud home">
+        <span>Israa</span><span class="brand-dot">.</span>
+      </a>
 
-	<!-- Hero -->
-	<section class="hero" id="home">
-		<div class="hero-content">
-			<div class="hero-subtitle">Full‑Stack Developer</div>
-			<h1>Transforming ideas into robust digital products</h1>
-			<div class="hero-description">
-				<p>
-					Hi, I’m <strong>Israa Almahmoud</strong><br>
-					A full-stack developer with a strong interest in both frontend and backend development.
-					I enjoy coding not only as a profession, but also as a hobby, and I’m passionate about building
-					websites and applications.
-					Currently, I work as a programmer at
-					<a href="https://site.sba.nl/" target="_blank" rel="noopener noreferrer">SBA</a>,
-					where I focus on developing clean, reliable, and well-structured solutions.
+      <ul class="desktop-nav">
+        <li><a href="index.html" data-nav="home">Home</a></li>
+        <li><a href="projects.html" data-nav="projects">Projects</a></li>
+        <li><a href="practice.html" data-nav="practice">Lab</a></li>
+        <li><a href="about.html" data-nav="about">About</a></li>
+      </ul>
 
-				</p>
-			</div>
-			<div class="hero-stats" aria-label="Key stats">
-				<div class="hero-stat">
-					<span class="hero-stat-number">2+ years</span>
-					<span class="hero-stat-label">Project experience</span>
-				</div>
-				<div class="hero-stat">
-					<span class="hero-stat-number">5+</span>
-					<span class="hero-stat-label">Projects</span>
-				</div>
-				<div class="hero-stat">
-					<span class="hero-stat-number">API‑first</span>
-					<span class="hero-stat-label">REST & JSON</span>
-				</div>
-			</div>
-			<div class="cta-buttons">
-				<a href="#projects" class="cta-button">View Projects</a>
-			</div>
-		</div>
-	</section>
+      <div class="nav-actions">
+        <a class="button button-small button-primary nav-projects" href="projects.html">Projects</a>
+        <button class="menu-toggle" id="mobileMenuToggle" type="button" aria-label="Open navigation menu" aria-controls="mobileNav" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
 
-	<!-- Skills -->
-	<section class="features" id="skills">
-		<div class="features-container">
-			<h2 class="section-title">Skills & Tech Stack</em></h2>
-			<span class="title-line"></span>
+    <div class="mobile-nav" id="mobileNav" aria-hidden="true">
+      <a href="index.html" data-nav="home">Home</a>
+      <a href="projects.html" data-nav="projects">Projects</a>
+      <a href="practice.html" data-nav="practice">Lab</a>
+      <a href="about.html" data-nav="about">About</a>
+    </div>
+  </header>
 
-			<div class="skills-grid">
-				<!-- Frontend -->
-				<div class="skill-card span-6 card-rose">
-					<div class="card-icon">🌸</div>
-					<h3 class="card-label label-rose">Frontend</h3>
-					<p>
-						JavaScript (ES6+), HTML5, CSS3, <strong>Tailwind</strong>, <strong>Bootstrap</strong>.
-						Building responsive UIs with <strong>React</strong> and working with component-based architecture,
-						state management, accessibility, and performance.
-					</p>
-					<div class="tags">
-						<span class="tag tag-rose">JavaScript ES6+</span>
-						<span class="tag tag-rose">React</span>
-						<span class="tag tag-rose">HTML5</span>
-						<span class="tag tag-rose">CSS3</span>
-						<span class="tag tag-orchid">Tailwind</span>
-						<span class="tag tag-orchid">Bootstrap</span>
-					</div>
-				</div>
+  <main id="main">
+    <section class="hero" id="home" data-nav-group="home">
+      <div class="container hero-layout">
+        <div class="hero-copy">
+          <p class="eyebrow mono">FULL-STACK DEVELOPER · ROTTERDAM</p>
+          <h1>
+            I turn ideas into
+            <span class="gradient-text">clear, reliable digital products.</span>
+          </h1>
+          <p class="hero-lede">
+            I’m Israa Almahmoud. I work across frontend, backend, databases, and mobile development, with a strong focus on structure, usability, and thoughtful details.
+          </p>
 
-				<!-- Backend -->
-				<div class="skill-card span-6 card-orchid">
-					<div class="card-icon">⚙️</div>
-					<h3 class="card-label label-orchid">Backend</h3>
-					<p>
-						<strong>PHP</strong> with <strong>Laravel</strong> and <strong>CodeIgniter</strong>, plus <strong>.NET / C#</strong> and <strong>Node.js (Express)</strong>.
-						Strong focus on <strong>OOP</strong>, building <strong>REST APIs</strong>, and implementing
-						<strong>authentication & authorization</strong>.
-					</p>
-					<div class="tags">
-						<span class="tag tag-orchid">PHP</span>
-						<span class="tag tag-orchid">Laravel</span>
-						<span class="tag tag-orchid">CodeIgniter</span>
-						<span class="tag tag-denim">.NET / C#</span>
-						<span class="tag tag-denim">Node.js</span>
-						<span class="tag tag-denim">Express</span>
-						<span class="tag tag-rose">REST APIs</span>
-					</div>
-				</div>
+          <div class="hero-actions">
+            <a class="button button-primary" href="projects.html">Explore projects</a>
+            <a class="button button-secondary" href="#about">About my approach</a>
+          </div>
 
-				<!-- Data & Databases -->
-				<div class="skill-card span-6 card-denim">
-					<div class="card-icon">🗄️</div>
-					<h3 class="card-label label-denim">Data & Databases</h3>
-					<p>
-						<strong>SQL</strong> (with HeidiSQL), database design, migrations, and <strong>data modeling</strong>
-						(including <strong>ERD</strong>). Data analysis using <strong>Python</strong> and <strong>NumPy</strong>.
-					</p>
-					<div class="tags">
-						<span class="tag tag-denim">SQL</span>
-						<span class="tag tag-denim">HeidiSQL</span>
-						<span class="tag tag-denim">ERD</span>
-						<span class="tag tag-orchid">Python</span>
-						<span class="tag tag-orchid">NumPy</span>
-						<span class="tag tag-rose">Data Modelling</span>
-					</div>
-				</div>
+          <div class="current-note">
+            <span class="current-dot" aria-hidden="true"></span>
+            <span>Software Developer at SBA · Starting Computer Science in September 2026</span>
+          </div>
+        </div>
 
-				<!-- Tools & Workflow -->
-				<div class="skill-card span-6 card-mix">
-					<div class="card-icon">🛠️</div>
-					<h3 class="card-label label-mix">Tools & Workflow</h3>
-					<p>
-						Git & GitHub, Git Flow, deployment with <strong>FileZilla</strong>, and hosting via <strong>GitHub Pages</strong>.
-						Comfortable with <strong>Scrum</strong>, creating <strong>flowcharts</strong>, documentation, and troubleshooting.
-					</p>
-					<div class="tags">
-						<span class="tag tag-rose">Git & GitHub</span>
-						<span class="tag tag-rose">Git Flow</span>
-						<span class="tag tag-orchid">FileZilla</span>
-						<span class="tag tag-orchid">GitHub Pages</span>
-						<span class="tag tag-denim">Scrum</span>
-						<span class="tag tag-denim">Flowcharts</span>
-					</div>
-				</div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="orbital-ring ring-one"></div>
+          <div class="orbital-ring ring-two"></div>
+          <div class="gradient-orb"></div>
 
-				<!-- Mobile — full width -->
-				<div class="skill-card wide">
-					<div class="card-stripe"></div>
-					<div class="wide-inner">
-						<div class="wide-text">
-							<div class="card-icon">📱</div>
-							<h3 class="card-label label-teal">Mobile</h3>
-							<p>Delivering smooth, responsive mobile experiences with Ionic — bridging web technologies
-								to native-feeling apps with full API integration.</p>
-							<div class="tags">
-								<span class="tag tag-denim">Ionic Framework</span>
-								<span class="tag tag-denim">API Integration</span>
-								<span class="tag tag-rose">Cross-Platform</span>
-								<span class="tag tag-orchid">Responsive Design</span>
-							</div>
-						</div>
-						<div class="wide-visual">
-							<div class="platform-badge"><span>📱</span>iOS</div>
-							<div class="platform-badge"><span>🤖</span>Android</div>
-							<div class="platform-badge"><span>🌐</span>Web</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+          <span class="tech-chip chip-react mono">React</span>
+          <span class="tech-chip chip-laravel mono">Laravel</span>
+          <span class="tech-chip chip-csharp mono">C#</span>
+          <span class="tech-chip chip-sql mono">MySQL</span>
+          <span class="tech-chip chip-vue mono">Vue</span>
 
+          <div class="code-card">
+            <div class="code-card-top">
+              <span class="window-dot red"></span>
+              <span class="window-dot yellow"></span>
+              <span class="window-dot green"></span>
+              <span class="code-file mono">portfolio.ts</span>
+            </div>
+            <pre class="code-card-body mono"><code><span class="syntax-keyword">const</span> developer = {
+  name: <span class="syntax-string">"Israa"</span>,
+  role: <span class="syntax-string">"Full-Stack Developer"</span>,
+  focus: [
+    <span class="syntax-string">"clear interfaces"</span>,
+    <span class="syntax-string">"reliable systems"</span>,
+    <span class="syntax-string">"useful products"</span>
+  ]
+};</code></pre>
+          </div>
+        </div>
+      </div>
 
-	<!-- Projects -->
-	<section class="projects" id="projects">
-		<h2 class="section-title">Projects</h2>
+      <a class="scroll-indicator" href="projects.html" aria-label="Open the projects page">
+        <span></span>
+      </a>
+    </section>
 
-		<div class="projects-grid">
-			<!-- Personal Finance Tracker Application -->
-			<article class="project-card glass">
-				<header class="project-header">
-					<h3 class="project-title">Mintly – Personal Finance Tracker</h3>
-				</header>
+    <section class="section selected-work" id="work" data-nav-group="work">
+      <div class="container">
+        <div class="section-heading-row">
+          <div>
+            <p class="section-index mono">01 — SELECTED WORK</p>
+            <h2>Projects that show how I think and build.</h2>
+          </div>
+          <a class="text-link" href="projects.html">View full project archive <span aria-hidden="true">↗</span></a>
+        </div>
 
-				<p class="project-summary">
-					Full-stack personal finance web application that helps users track income and expenses, analyze
-					financial behavior, and visualize insights through interactive dashboards.
-				</p>
+        <div class="project-grid">
+          <article class="project-card project-card-large reveal">
+            <div class="project-visual mintly-visual">
+              <div class="visual-toolbar">
+                <span class="visual-label mono">MINTLY / DASHBOARD</span>
+                <span class="visual-status">Overview</span>
+              </div>
+              <div class="dashboard-layout">
+                <div class="dashboard-sidebar">
+                  <span></span><span></span><span></span><span></span>
+                </div>
+                <div class="dashboard-main">
+                  <div class="dashboard-total">€2,240.00</div>
+                  <div class="dashboard-caption">Current balance</div>
+                  <div class="dashboard-chart">
+                    <i style="--bar:42%"></i><i style="--bar:68%"></i><i style="--bar:55%"></i><i style="--bar:82%"></i><i style="--bar:72%"></i><i style="--bar:94%"></i><i style="--bar:78%"></i>
+                  </div>
+                  <div class="dashboard-row"><span></span><span></span><span></span></div>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-meta">
+                <span class="mono">FULL-STACK · PERSONAL FINANCE</span>
+                <span>01</span>
+              </div>
+              <h3>Mintly</h3>
+              <p>A personal finance application for tracking income, expenses, savings, and spending patterns through a clear dashboard.</p>
+              <div class="tag-list">
+                <span>Vue.js</span><span>CodeIgniter 4</span><span>PHP</span><span>MySQL</span>
+              </div>
+              <div class="project-actions">
+                <a class="text-link" href="projects.html#mintly">Read case study <span aria-hidden="true">→</span></a>
+                <a class="icon-link" href="https://github.com/isravx0/Personal-finance-tracker-frontend" target="_blank" rel="noopener" aria-label="Open Mintly frontend repository">GitHub ↗</a>
+              </div>
+            </div>
+          </article>
 
-				<ul class="project-highlights">
-					<li>Financial analysis engine calculating expenses, savings, and balance with smart advice</li>
-					<li>Interactive dashboard with charts (income vs expenses, breakdowns, trends)</li>
-					<li>Transaction tracking system for real-time income and expense management</li>
-					<li>History view with filtering and financial summaries</li>
-				</ul>
+          <article class="project-card reveal">
+            <div class="project-visual movies-visual">
+              <div class="movie-feature">
+                <div class="movie-kicker mono">NOW EXPLORING</div>
+                <div class="movie-title">DUNE</div>
+                <div class="movie-details">2021 · Science Fiction</div>
+              </div>
+              <div class="movie-posters"><span></span><span></span><span></span><span></span></div>
+            </div>
+            <div class="project-content">
+              <div class="project-meta">
+                <span class="mono">FRONTEND · API</span>
+                <span>02</span>
+              </div>
+              <h3>Movies Application</h3>
+              <p>A responsive movie discovery experience with search, filters, details, and locally saved favorites.</p>
+              <div class="tag-list"><span>React</span><span>JavaScript</span><span>REST API</span></div>
+              <div class="project-actions">
+                <a class="text-link" href="projects.html#movies">Read case study <span aria-hidden="true">→</span></a>
+                <a class="icon-link" href="https://github.com/isravx0/movie-application" target="_blank" rel="noopener">GitHub ↗</a>
+              </div>
+            </div>
+          </article>
 
-				<div class="project-tech">
-					<span>Vue.js</span>
-					<span>Bootstrap</span>
-					<span>CodeIgniter 4</span>
-					<span>PHP</span>
-					<span>MySQL</span>
-				</div>
+          <article class="project-card reveal">
+            <div class="project-visual solar-visual">
+              <div class="sun-orb"></div>
+              <div class="solar-ring solar-ring-one"></div>
+              <div class="solar-ring solar-ring-two"></div>
+              <div class="solar-data">
+                <span class="mono">ESTIMATED OUTPUT</span>
+                <strong>4,860 kWh</strong>
+                <small>yearly production</small>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-meta">
+                <span class="mono">FULL-STACK · DATA</span>
+                <span>03</span>
+              </div>
+              <h3>Solar Panel Simulator</h3>
+              <p>A calculation-driven tool that turns panel, location, and consumption data into understandable visual results.</p>
+              <div class="tag-list"><span>Laravel</span><span>PHP</span><span>MySQL</span><span>Charts</span></div>
+              <div class="project-actions">
+                <a class="text-link" href="projects.html#solar">Read case study <span aria-hidden="true">→</span></a>
+                <a class="icon-link" href="https://github.com/isravx0/solar-simulator" target="_blank" rel="noopener">GitHub ↗</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
 
-				<div class="project-actions">
-					<a class="btn" href="https://github.com/isravx0/Personal-finance-tracker-backend" target="_blank"
-						rel="noopener">View Backend on GitHub</a>
-					<a class="btn" href="https://github.com/isravx0/Personal-finance-tracker-frontend" target="_blank"
-						rel="noopener">View Frontend on GitHub</a>
-				</div>
-			</article>
-			<!-- Movies Application -->
-			<article class="project-card glass">
-				<header class="project-header">
-					<h3 class="project-title">Movies Application</h3>
-				</header>
-				<p class="project-summary">
-					Web app to discover movies with search, filtering, and detail pages. Built with a modern frontend
-					and external movie API.
-				</p>
-				<ul class="project-highlights">
-					<li>Search by title/genre, sort by popularity/year</li>
-					<li>Favorites list & local storage</li>
-					<li>Responsive design and fast client‑side routing</li>
-				</ul>
-				<div class="project-tech">
-					<span>React</span><span>Vue
-						(variant)</span><span>JavaScript</span><span>CSS/Bootstrap</span><span>REST API</span>
-				</div>
-				<div class="project-actions">
-					<a class="btn" href="https://github.com/isravx0/movie-application" target="_blank"
-						rel="noopener">View on GitHub</a>
-				</div>
-			</article>
+    <section class="section profile-section" id="about" data-nav-group="about">
+      <div class="container profile-grid">
+        <div class="profile-copy reveal">
+          <p class="section-index mono">02 — ABOUT</p>
+          <h2>Developer, student, and curious maker.</h2>
+          <p class="profile-lede">
+            I enjoy the point where interface design, application logic, and data begin to work as one coherent product.
+          </p>
+          <p>
+            My work combines practical development experience with continuous learning. I currently work as a Software Developer at SBA and will start studying Computer Science in Rotterdam in September 2026.
+          </p>
+          <p>
+            I care about clear structure, calm interfaces, maintainable code, and products that make complex information easier to understand.
+          </p>
+          <a class="text-link" href="about.html">More about my background <span aria-hidden="true">→</span></a>
+        </div>
 
-			<!-- Solar Panel Simulator -->
-			<article class="project-card glass">
-				<header class="project-header">
-					<h3 class="project-title">Solar Panel Simulator</h3>
-				</header>
-				<p class="project-summary">
-					Simulation tool estimating solar energy output and consumption based on number of panels, tilt
-					angle, and location. Provides yearly estimation and break‑even point.
-				</p>
-				<ul class="project-highlights">
-					<li>Interactive input & real‑time calculation</li>
-					<li>Charts with monthly output</li>
-					<li>Export results to CSV</li>
-				</ul>
-				<div class="project-tech">
-					<span>Laravel</span><span>PHP</span><span>MySQL</span><span>Charting</span><span>REST API</span>
-				</div>
-				<div class="project-actions">
-					<a class="btn" href="https://github.com/isravx0/solar-simulator" target="_blank" rel="noopener">View
-						on GitHub</a>
-				</div>
-				<p class="project-note"><strong>Note:</strong> this is an estimation (not 100% accurate).</p>
-			</article>
+        <div class="skills-panel reveal">
+          <p class="panel-title mono">TECHNICAL TOOLKIT</p>
+          <div class="skill-group">
+            <h3>Frontend</h3>
+            <div class="tag-list"><span>React</span><span>Vue.js</span><span>JavaScript</span><span>TypeScript</span><span>HTML</span><span>CSS</span></div>
+          </div>
+          <div class="skill-group">
+            <h3>Backend</h3>
+            <div class="tag-list"><span>PHP</span><span>Laravel</span><span>CodeIgniter</span><span>C# / .NET</span><span>Node.js</span></div>
+          </div>
+          <div class="skill-group">
+            <h3>Data &amp; mobile</h3>
+            <div class="tag-list"><span>MySQL</span><span>SQL</span><span>REST APIs</span><span>Ionic</span><span>Python</span></div>
+          </div>
+          <div class="skill-group">
+            <h3>Workflow</h3>
+            <div class="tag-list"><span>Git</span><span>GitHub</span><span>Scrum</span><span>ERD</span><span>API integration</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-			<!-- Ionic To-Do & Habits (EN/NL/AR) — In progress -->
-			<article class="project-card glass">
-				<header class="project-header">
-					<h3 class="project-title">Ionic To-Do & Habits App (EN/NL/AR) — In progress</h3>
-				</header>
+    <section class="section experience-section" id="experience" data-nav-group="experience">
+      <div class="container">
+        <div class="section-heading compact-heading">
+          <p class="section-index mono">03 — EXPERIENCE &amp; EDUCATION</p>
+          <h2>A concise path through work and learning.</h2>
+        </div>
 
-				<p class="project-summary">
-					<strong>EN:</strong> A mobile app to manage tasks and build habits, with multilingual support
-					(English, Dutch, Arabic). <em>Still under development.</em><br>
-					<strong>NL:</strong> Een mobiele app om taken te beheren en gewoontes op te bouwen, met meertalige
-					ondersteuning (Engels, Nederlands, Arabisch). <em>Nog in ontwikkeling.</em>
-				</p>
+        <div class="timeline">
+          <article class="timeline-entry reveal">
+            <div class="timeline-date mono">2026 — PRESENT</div>
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <div class="timeline-heading">
+                <h3>Software Developer</h3>
+                <span>SBA</span>
+              </div>
+              <p>Working across software features, maintenance, integrations, frontend interfaces, and backend logic.</p>
+            </div>
+          </article>
 
-				<ul class="project-highlights">
-					<li>To-do lists + habit tracking</li>
-					<li>Multilingual UI (EN / NL / AR)</li>
-					<li>Clean, mobile-first UX (work in progress)</li>
-				</ul>
+          <article class="timeline-entry reveal">
+            <div class="timeline-date mono">STARTING SEP 2026</div>
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <div class="timeline-heading">
+                <h3>Computer Science</h3>
+                <span>Rotterdam</span>
+              </div>
+              <p>Continuing my development through higher education with a broader focus on software, systems, and technical problem-solving.</p>
+            </div>
+          </article>
 
-				<div class="project-tech">
-					<span>Ionic</span><span>TypeScript</span><span>i18n</span><span>Mobile</span>
-				</div>
+          <article class="timeline-entry reveal">
+            <div class="timeline-date mono">GRADUATION INTERNSHIP</div>
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <div class="timeline-heading">
+                <h3>Software Developer Intern</h3>
+                <span>SBA</span>
+              </div>
+              <p>Worked from requirements and data structure through implementation, testing, and delivery in a full-stack context.</p>
+            </div>
+          </article>
 
-				<div class="project-actions">
-					<a class="btn" href="https://github.com/isravx0/daily-tasks" target="_blank"
-						rel="noopener">Repository</a>
-				</div>
-			</article>
+          <article class="timeline-entry reveal">
+            <div class="timeline-date mono">FOUNDATION</div>
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <div class="timeline-heading">
+                <h3>MBO Software Development</h3>
+                <span>Education</span>
+              </div>
+              <p>Built a foundation in programming, databases, object-oriented development, web technologies, and collaborative workflows.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
 
+    <section class="section archive-section">
+      <div class="container archive-panel reveal">
+        <div>
+          <p class="section-index mono">04 — PROJECT ARCHIVE &amp; LAB</p>
+          <h2>More builds, experiments, and technical notes.</h2>
+          <p>The project archive contains fuller case studies. The Lab collects smaller experiments, current learning, and ideas in progress.</p>
+        </div>
+        <div class="archive-actions">
+          <a class="button button-primary" href="projects.html">Open project archive</a>
+          <a class="button button-secondary" href="practice.html">Explore the Lab</a>
+        </div>
+      </div>
+    </section>
+  </main>
 
-			<!-- More Work -->
-			<article class="project-card glass">
-				<header class="project-header">
-					<h3 class="project-title">More Projects</h3>
-				</header>
-				<p class="project-summary">Check out additional repositories, experiments, and proof‑of‑concepts.</p>
-				<div class="project-actions">
-					<a class="btn" href="https://github.com/isravx0" target="_blank" rel="noopener">Visit my GitHub</a>
-				</div>
-			</article>
-		</div>
-	</section>
+  <footer class="site-footer">
+    <div class="container footer-layout">
+      <div>
+        <a class="brand footer-brand" href="index.html#home"><span>Israa</span><span class="brand-dot">.</span></a>
+        <p>Full-stack development, personal projects, and continuous learning.</p>
+      </div>
+      <div class="footer-nav">
+        <a href="projects.html">Projects</a>
+        <a href="practice.html">Lab</a>
+        <a href="about.html">About</a>
+        <a href="https://github.com/isravx0" target="_blank" rel="noopener">GitHub ↗</a>
+        <a href="https://www.linkedin.com/in/israa-almahmoud/" target="_blank" rel="noopener">LinkedIn ↗</a>
+      </div>
+      <p class="copyright">© <span id="year"></span> Israa Almahmoud</p>
+    </div>
+  </footer>
 
-	<!-- Experience & Education -->
-	<section class="timeline" id="experience">
-		<h2 class="section-title">Experience & Education</h2>
-
-		<div class="timeline-container">
-			<div class="timeline-line"></div>
-
-			<!-- Current job -->
-			<div class="timeline-item">
-				<div class="timeline-content glass">
-					<div class="timeline-year">Present</div>
-					<h4>Software Developer — SBA</h4>
-					<p>
-						Currently working as a software developer on internal and client-facing applications.
-						Involved in frontend and backend development, API integration, and application maintenance.
-					</p>
-				</div>
-				<div class="timeline-dot"></div>
-			</div>
-
-			<!-- Current study -->
-			<div class="timeline-item">
-				<div class="timeline-content glass">
-					<div class="timeline-year">2026 — HBO</div>
-					<h4>Business IT & Management (BIM)</h4>
-					<p>
-						First-year student at a University of Applied Sciences in Rotterdam.
-						Focused on IT strategy, business processes, data, and stakeholder management.
-					</p>
-				</div>
-				<div class="timeline-dot"></div>
-			</div>
-
-			<!-- Graduation internship during MBO -->
-			<div class="timeline-item">
-				<div class="timeline-content glass">
-					<div class="timeline-year">Graduation Internship (MBO)</div>
-					<h4>Software Developer — SBA</h4>
-					<p>
-						Graduation internship completed as part of the MBO program.
-						Focused on full-stack development, including requirements analysis,
-						data modeling, implementation, and delivery.
-					</p>
-				</div>
-				<div class="timeline-dot"></div>
-			</div>
-
-			<!-- Internship during MBO -->
-			<div class="timeline-item">
-				<div class="timeline-content glass">
-					<div class="timeline-year">Internship (MBO)</div>
-					<h4>Software Developer — The Do Good Only Company</h4>
-					<p>
-						Internship completed as part of the MBO program.
-						Worked on web development tasks across frontend and backend,
-						while gaining experience with agile workflows and team collaboration.
-					</p>
-				</div>
-				<div class="timeline-dot"></div>
-			</div>
-
-			<!-- MBO education -->
-			<div class="timeline-item">
-				<div class="timeline-content glass">
-					<div class="timeline-year">Secondary Vocational Education (MBO)</div>
-					<h4>Software Development</h4>
-					<p>
-						Completed a Secondary Vocational Education (MBO) program in Software Development.
-						Developed a strong foundation in programming, databases, object-oriented development,
-						and web technologies.
-					</p>
-				</div>
-				<div class="timeline-dot"></div>
-			</div>
-
-		</div>
-	</section>
-
-	<!-- Contact -->
-	<section class="contact" id="contact">
-		<div class="contact-container">
-			<div class="contact-info glass">
-				<h3>Get in Touch</h3>
-				<p>
-					Questions or inquiries? You can reach me via the form or through the following channels:
-				</p>
-				<div class="social-links">
-					<a href="https://github.com/isravx0" target="_blank" rel="noopener" class="glass"
-						aria-label="GitHub">
-						<img class="logo-icon glass" src="images/github.png" alt="GitHub" />
-					</a>
-					<a href="https://www.linkedin.com/in/israa-almahmoud/" target="_blank" rel="noopener" class="glass"
-						aria-label="LinkedIn">
-						<img class="logo-icon glass" src="images/linkedin.jpg" alt="LinkedIn" />
-					</a>
-				</div>
-			</div>
-
-			<form id="contact-form" class="contact-form glass" action="https://formspree.io/f/mnngnoqn" method="POST">
-				<div class="form-group">
-					<input type="text" name="name" placeholder="Name" required />
-				</div>
-				<div class="form-group">
-					<input type="email" name="email" placeholder="Email" required />
-				</div>
-				<div class="form-group">
-					<input type="text" name="subject" placeholder="Subject" required />
-				</div>
-				<div class="form-group">
-					<textarea name="message" rows="5" placeholder="Message" required></textarea>
-				</div>
-
-				<!-- Hidden field for custom subject -->
-				<input type="hidden" name="_subject" value="New message from portfolio site" />
-
-				<button type="submit" class="submit-btn">SEND MESSAGE</button>
-			</form>
-		</div>
-	</section>
-
-	<footer>
-		<div class="footer-content">
-			<div class="footer-links">
-				<a href="#skills">Skills</a>
-				<a href="#projects">Projects</a>
-				<a href="#experience">Experience</a>
-				<a href="https://github.com/isravx0" target="_blank" rel="noopener">GitHub</a>
-			</div>
-			<div class="footer-copyright">
-				<p>&copy; <span id="year"></span> Israa Almahmoud. All rights reserved.</p>
-			</div>
-		</div>
-	</footer>
-
-	<script>
-		// current year in footer
-		document.addEventListener('DOMContentLoaded', () => {
-			const y = document.getElementById('year');
-			if (y) y.textContent = new Date().getFullYear();
-		});
-
-	</script>
-	<script src="scripts.js"></script>
+  <script src="scripts.js"></script>
 </body>
-
 </html>

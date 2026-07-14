@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Project archive and case studies by full-stack developer Israa Almahmoud." />
+  <meta name="theme-color" content="#080a12" />
+  <title>Projects | Israa Almahmoud</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="projects">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+  <div class="background-grid" aria-hidden="true"></div>
+  <div class="spotlight" id="spotlight" aria-hidden="true"></div>
+
+  <header class="site-header" id="site-header">
+    <nav class="nav-shell" aria-label="Primary navigation">
+      <a class="brand" href="index.html#home"><span>Israa</span><span class="brand-dot">.</span></a>
+      <ul class="desktop-nav">
+        <li><a href="index.html" data-nav="home">Home</a></li>
+        <li><a href="projects.html" data-nav="projects">Projects</a></li>
+        <li><a href="practice.html" data-nav="practice">Lab</a></li>
+        <li><a href="about.html" data-nav="about">About</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a class="button button-small button-secondary nav-projects" href="projects.html">Projects</a>
+        <button class="menu-toggle" id="mobileMenuToggle" type="button" aria-label="Open navigation menu" aria-controls="mobileNav" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </nav>
+    <div class="mobile-nav" id="mobileNav" aria-hidden="true">
+      <a href="index.html" data-nav="home">Home</a>
+      <a href="projects.html" data-nav="projects">Projects</a>
+      <a href="practice.html" data-nav="practice">Lab</a>
+      <a href="about.html" data-nav="about">About</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container page-hero-grid">
+        <div>
+          <p class="eyebrow mono">PROJECT ARCHIVE</p>
+          <h1>A closer look at the products, systems, and interfaces I have built.</h1>
+          <p class="hero-lede">Each project represents a different part of my development practice: full-stack architecture, interface design, API integration, data presentation, or mobile thinking.</p>
+        </div>
+        <aside class="page-summary reveal" aria-label="Project archive summary">
+          <div><span class="summary-number">04</span><span>Featured case studies</span></div>
+          <div><span class="summary-number">Web</span><span>Frontend and backend</span></div>
+          <div><span class="summary-number">Mobile</span><span>Cross-platform experiments</span></div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section case-study-list">
+      <div class="container">
+        <article class="case-study-card reveal" id="mintly">
+          <div class="case-visual mintly-visual">
+            <div class="visual-toolbar"><span class="visual-label mono">MINTLY / FINANCE</span><span class="visual-status">Dashboard</span></div>
+            <div class="dashboard-layout">
+              <div class="dashboard-sidebar"><span></span><span></span><span></span><span></span></div>
+              <div class="dashboard-main">
+                <div class="dashboard-total">€2,240.00</div>
+                <div class="dashboard-caption">Current balance</div>
+                <div class="dashboard-chart"><i style="--bar:42%"></i><i style="--bar:68%"></i><i style="--bar:55%"></i><i style="--bar:82%"></i><i style="--bar:72%"></i><i style="--bar:94%"></i><i style="--bar:78%"></i></div>
+                <div class="dashboard-row"><span></span><span></span><span></span></div>
+              </div>
+            </div>
+          </div>
+          <div class="case-content">
+            <div class="case-number mono">CASE STUDY 01</div>
+            <h2>Mintly — Personal Finance Tracker</h2>
+            <p class="case-lede">A full-stack finance application designed to make everyday money tracking feel clear and approachable.</p>
+            <div class="case-columns">
+              <div><h3>Challenge</h3><p>Financial data can quickly become overwhelming. The interface needed to present useful detail without making the experience feel heavy.</p></div>
+              <div><h3>Approach</h3><p>I separated frontend and backend responsibilities, structured the data around transactions and summaries, and designed dashboard views around the information users need most.</p></div>
+              <div><h3>Key features</h3><ul><li>Income and expense tracking</li><li>Category and history filters</li><li>Balance and savings summaries</li><li>Chart-friendly API responses</li></ul></div>
+            </div>
+            <div class="tag-list"><span>Vue.js</span><span>Bootstrap</span><span>CodeIgniter 4</span><span>PHP</span><span>MySQL</span></div>
+            <div class="project-actions">
+              <a class="button button-secondary button-small" href="https://github.com/isravx0/Personal-finance-tracker-frontend" target="_blank" rel="noopener">Frontend repository ↗</a>
+              <a class="button button-secondary button-small" href="https://github.com/isravx0/Personal-finance-tracker-backend" target="_blank" rel="noopener">Backend repository ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="case-study-card reveal" id="movies">
+          <div class="case-visual movies-visual">
+            <div class="movie-feature"><div class="movie-kicker mono">DISCOVER / SEARCH / SAVE</div><div class="movie-title">DUNE</div><div class="movie-details">2021 · Science Fiction</div></div>
+            <div class="movie-posters"><span></span><span></span><span></span><span></span></div>
+          </div>
+          <div class="case-content">
+            <div class="case-number mono">CASE STUDY 02</div>
+            <h2>Movies Application</h2>
+            <p class="case-lede">A frontend project centred on API data, responsive browsing, and a smooth path from discovery to detail.</p>
+            <div class="case-columns">
+              <div><h3>Challenge</h3><p>Raw movie data needed to become a familiar, enjoyable browsing flow that remained fast and easy to understand.</p></div>
+              <div><h3>Approach</h3><p>I structured the application around search, filtering, detail views, and reusable UI components, while keeping state and API behaviour predictable.</p></div>
+              <div><h3>Key features</h3><ul><li>Title search and filters</li><li>Responsive detail pages</li><li>Favorites in local storage</li><li>External REST API integration</li></ul></div>
+            </div>
+            <div class="tag-list"><span>React</span><span>JavaScript</span><span>Bootstrap</span><span>REST API</span></div>
+            <div class="project-actions"><a class="button button-secondary button-small" href="https://github.com/isravx0/movie-application" target="_blank" rel="noopener">Open repository ↗</a></div>
+          </div>
+        </article>
+
+        <article class="case-study-card reveal" id="solar">
+          <div class="case-visual solar-visual">
+            <div class="sun-orb"></div><div class="solar-ring solar-ring-one"></div><div class="solar-ring solar-ring-two"></div>
+            <div class="solar-data"><span class="mono">ESTIMATED OUTPUT</span><strong>4,860 kWh</strong><small>yearly production</small></div>
+          </div>
+          <div class="case-content">
+            <div class="case-number mono">CASE STUDY 03</div>
+            <h2>Solar Panel Simulator</h2>
+            <p class="case-lede">A data-focused full-stack tool that translates technical inputs into understandable estimates and visual summaries.</p>
+            <div class="case-columns">
+              <div><h3>Challenge</h3><p>Solar calculations involve technical assumptions and multiple variables. The result needed to remain understandable for non-technical users.</p></div>
+              <div><h3>Approach</h3><p>I organised the flow around user inputs, calculation logic, monthly output data, and a visual summary that highlights the main result first.</p></div>
+              <div><h3>Key features</h3><ul><li>Input-based estimation</li><li>Monthly output charts</li><li>Consumption comparison</li><li>CSV export</li></ul></div>
+            </div>
+            <div class="tag-list"><span>Laravel</span><span>PHP</span><span>MySQL</span><span>Charts</span><span>REST API</span></div>
+            <div class="project-actions"><a class="button button-secondary button-small" href="https://github.com/isravx0/solar-simulator" target="_blank" rel="noopener">Open repository ↗</a></div>
+          </div>
+        </article>
+
+        <article class="case-study-card reveal" id="daily-tasks">
+          <div class="case-visual mobile-visual">
+            <div class="phone-shell phone-left"><div class="phone-notch"></div><div class="phone-screen"><span class="phone-title">Today</span><i></i><i></i><i></i><i></i></div></div>
+            <div class="phone-shell phone-right"><div class="phone-notch"></div><div class="phone-screen"><span class="phone-title">Habits</span><b>72%</b><i></i><i></i><i></i></div></div>
+            <span class="language-pill lang-one">EN</span><span class="language-pill lang-two">NL</span><span class="language-pill lang-three">AR</span>
+          </div>
+          <div class="case-content">
+            <div class="case-number mono">CASE STUDY 04 · IN PROGRESS</div>
+            <h2>Ionic To-Do &amp; Habits App</h2>
+            <p class="case-lede">A mobile-first application for organising tasks and routines with multilingual support.</p>
+            <div class="case-columns">
+              <div><h3>Challenge</h3><p>Tasks and habits belong together, but combining them can easily make a mobile interface feel crowded.</p></div>
+              <div><h3>Approach</h3><p>I am exploring a simple information hierarchy, reusable mobile components, and language support that works naturally across English, Dutch, and Arabic.</p></div>
+              <div><h3>Current focus</h3><ul><li>Task and habit flows</li><li>Multilingual interface</li><li>Mobile-first components</li><li>Cross-platform structure</li></ul></div>
+            </div>
+            <div class="tag-list"><span>Ionic</span><span>TypeScript</span><span>i18n</span><span>Mobile</span></div>
+            <div class="project-actions"><a class="button button-secondary button-small" href="https://github.com/isravx0/daily-tasks" target="_blank" rel="noopener">Open repository ↗</a></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section more-projects-section">
+      <div class="container">
+        <div class="section-heading compact-heading">
+          <p class="section-index mono">MORE EXPLORATION</p>
+          <h2>Smaller builds and recurring technical themes.</h2>
+        </div>
+        <div class="small-project-grid">
+          <article class="small-project reveal"><span class="mono">UI SYSTEMS</span><h3>Responsive interface experiments</h3><p>Layouts, reusable components, dashboard patterns, and visual systems that strengthen my frontend practice.</p></article>
+          <article class="small-project reveal"><span class="mono">APIS &amp; DATA</span><h3>Backend and integration practice</h3><p>CRUD flows, validation, database structure, API responses, and the logic that supports reliable interfaces.</p></article>
+          <article class="small-project reveal"><span class="mono">CURRENT LEARNING</span><h3>C# and .NET foundations</h3><p>Console applications, types, control flow, object-oriented concepts, and the foundations of the .NET ecosystem.</p></article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-layout">
+      <div><a class="brand footer-brand" href="index.html"><span>Israa</span><span class="brand-dot">.</span></a><p>Full-stack development, personal projects, and continuous learning.</p></div>
+      <div class="footer-nav"><a href="index.html">Home</a><a href="practice.html">Lab</a><a href="about.html">About</a><a href="https://github.com/isravx0" target="_blank" rel="noopener">GitHub ↗</a></div>
+      <p class="copyright">© <span id="year"></span> Israa Almahmoud</p>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
