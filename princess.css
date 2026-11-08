@@ -32,6 +32,7 @@ body { background: #f7eee9; color: #694b53; }
 .brand::before { content: '♔'; background: #f7e7e9; border-color: #cea0ad80; color: #ae7389; border-radius: 50%; box-shadow: none; }
 .desktop-nav a { color: #a38188; }.desktop-nav a.active, .desktop-nav a:hover { color: #8f5c71; background: #ead1d938; }.desktop-nav a.active::after { background: #b98095; box-shadow: none; }
 .language-select select { color: #956f7d; background: #faefef; border-color: #c995a84d; }.language-select option { background: #fff9f5; color: #805966; }
+.language-select::after { color: #b08a9b; }
 .theme-toggle { color: #956f7d; background: #faefef; border-color: #c995a84d; border-radius: 20px; }.theme-toggle:hover { border-color: #b47c96; }
 .button { border-radius: 25px; font-family: var(--font-body); font-size: .76rem; letter-spacing: 0; }
 .button-primary { background: #bd8299; color: #fff9f5; border: 1px solid #ab708b; box-shadow: inset 0 0 0 3px #ebc8d02d, 0 5px 15px #aa738923; text-shadow: none; }

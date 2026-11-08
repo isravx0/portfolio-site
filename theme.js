@@ -9,7 +9,7 @@
   const updateSheet = () => {
     if (theme === 'light' && !lightSheet) {
       lightSheet = document.createElement('link');
-      lightSheet.rel = 'stylesheet'; lightSheet.href = 'princess.css'; lightSheet.id = 'light-theme-styles';
+      lightSheet.rel = 'stylesheet'; lightSheet.href = 'princess.css?v=7574c07e6747'; lightSheet.id = 'light-theme-styles';
       document.head.append(lightSheet);
     }
     if (lightSheet) { lightSheet.disabled = theme !== 'light'; lightSheet.media = theme === 'light' ? 'all' : 'not all'; }

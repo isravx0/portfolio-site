@@ -28,3 +28,7 @@ Descriptions are based on local project documentation. Visuals and demos are por
 ## Themes
 
 The navigation switch selects Cyber (dark) or Princess (light). The choice is saved locally and carried in internal links. `?theme=light` and `?theme=dark` select a theme explicitly; earlier `princess.html` and `?theme=princess` links remain compatible.
+
+## Publishing updates
+
+After changing CSS or JavaScript, run `python tools/version-assets.py`, then upload the updated HTML, CSS, JavaScript, and images together. Asset URLs include a content version so browsers fetch updated styles instead of mixing a new page with an old stylesheet.
