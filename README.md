@@ -1,38 +1,30 @@
-# 🌐 Israa Almahmoud — Portfolio (WIP)
+# Israa Almahmoud — Interactive Portfolio
 
-This is my personal portfolio website built to showcase my skills, projects, and experience as a **Full-Stack Developer**.  
-The site is currently **in progress 🚧**, but you can already see the structure and design.
+HTML, CSS and JavaScript. No build step, backend or API keys required. Open `index.html` directly in a browser, or run `python -m http.server 8085 --bind 127.0.0.1` and visit http://127.0.0.1:8085.
 
----
+## Projects
 
-## 🔧 Tech Stack
-- **Frontend**: HTML5, CSS3 (Glassmorphism theme), JavaScript
-- **Styling**: Custom CSS with animations
-- **Deployment**: GitHub Pages (planned)
+The homepage opens with the developer introduction and original code card. The collection contains VYRO, Mochi’s Garden, Nexora, Monvex Mobile, Monvex Web, Bloomly and JARVIS. Python projects are excluded. Existing case studies are retained. Each collection project has a dedicated detail page.
 
----
+## Mini apps
 
-## 🚀 Features (planned / in progress)
-- Hero section with introduction and quick stats
-- Skills & tech stack overview
-- Featured projects (Movies App, Solar Panel Simulator, more on GitHub)
-- Timeline with education & experience
-- Contact form (powered by Formspree)
+“Try the mini app” opens a keyboard-accessible dialog. Demos reset when closed and use sample data:
 
----
+- VYRO: choose exercises, log weights and reps, remove sets, inspect volume, finish a workout. Uses exercise illustrations from the original project.
+- Nexora: create, complete, filter and delete tasks.
+- Monvex: add income and expenses, remove transactions and review updated balances.
+- Bloomly: track habits across a week.
+- Mochi’s Garden: move with arrows or buttons, collect carrots and decorate.
+- JARVIS: clearly labelled scripted chat; no live AI or microphone.
+- Movies: search fictional titles and toggle favorites.
+- Solar: adjust panels, power and sun hours for an illustrative calculation.
 
-## 📌 Status
-- [x] Base design implemented  
-- [x] Sections structured  
-- [x] Final styling & polish  
-- [x] Responsive tweaks  
-- [x] Deployment  
+## Languages
 
----
+NL, EN and Arabic are available in the navigation. Dutch is the default. The preference is stored when storage is available and carried in internal links. Arabic uses RTL layout. Ordinary scripts allow translations to work when opening the HTML file directly.
 
-## 🛠 Local Setup
-1. Clone the repo:
-   ```bash
-   git clone https://github.com/isravx0/portfolio.git
-   cd portfolio
+Descriptions are based on local project documentation. Visuals and demos are portfolio interpretations, not screenshots or full copies of the applications. The assistant has no verified repository URL. The existing custom domain is configured in CNAME.
 
+## Themes
+
+The navigation switch selects Cyber (dark) or Princess (light). The choice is saved locally and carried in internal links. `?theme=light` and `?theme=dark` select a theme explicitly; earlier `princess.html` and `?theme=princess` links remain compatible.

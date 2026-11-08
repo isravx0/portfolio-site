@@ -4,15 +4,20 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="The development lab of Israa Almahmoud: smaller experiments, current learning, and technical explorations." />
-  <meta name="theme-color" content="#080a12" />
+  <meta name="theme-color" content="#140c15" />
   <title>Lab | Israa Almahmoud</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Chakra+Petch:wght@500;600;700&family=Noto+Sans+Arabic:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="polish.css" />
+  <link rel="stylesheet" href="cyber.css" />
+  <script src="theme.js"></script>
 </head>
 <body data-page="practice">
+  <div class="cyber-backdrop" aria-hidden="true"><div class="cyber-stars"></div><div class="cyber-landscape"></div></div>
+  <div class="reading-progress" aria-hidden="true"></div>
   <a class="skip-link" href="#main">Skip to content</a>
   <div class="ambient ambient-one" aria-hidden="true"></div>
   <div class="ambient ambient-two" aria-hidden="true"></div>
@@ -23,7 +28,7 @@
     <nav class="nav-shell" aria-label="Primary navigation">
       <a class="brand" href="index.html"><span>Israa Almahmoud</span><span class="brand-dot">.</span></a>
       <ul class="desktop-nav"><li><a href="index.html" data-nav="home">Home</a></li><li><a href="projects.html" data-nav="projects">Projects</a></li><li><a href="practice.html" data-nav="practice">Lab</a></li><li><a href="about.html" data-nav="about">About</a></li></ul>
-      <div class="nav-actions"><a class="button button-small button-secondary nav-projects" href="projects.html">Projects</a><button class="menu-toggle" id="mobileMenuToggle" type="button" aria-label="Open navigation menu" aria-controls="mobileNav" aria-expanded="false"><span></span><span></span><span></span></button></div>
+      <div class="nav-actions"><label class="language-select"><span class="sr-only">Language</span><select id="language-select" aria-label="Language"><option value="en" lang="en">EN</option><option value="nl" lang="nl">NL</option><option value="ar" lang="ar">العربية</option></select></label><a class="button button-small button-secondary nav-projects" href="projects.html">Projects</a><button class="menu-toggle" id="mobileMenuToggle" type="button" aria-label="Open navigation menu" aria-controls="mobileNav" aria-expanded="false"><span></span><span></span><span></span></button></div>
     </nav>
     <div class="mobile-nav" id="mobileNav" aria-hidden="true"><a href="index.html" data-nav="home">Home</a><a href="projects.html" data-nav="projects">Projects</a><a href="practice.html" data-nav="practice">Lab</a><a href="about.html" data-nav="about">About</a></div>
   </header>
@@ -34,7 +39,7 @@
         <div>
           <p class="eyebrow mono">THE LAB</p>
           <h1>Smaller experiments, active learning, and ideas still taking shape.</h1>
-          <p class="hero-lede">This is where I collect the less formal side of my development practice: technical exercises, interface studies, language learning, and projects that are still evolving.</p>
+          <p class="hero-lede">A collection of technical exercises, interface studies, programming-language exploration, and projects still in development.</p>
         </div>
         <div class="lab-terminal reveal" aria-hidden="true">
           <div class="terminal-top"><span></span><span></span><span></span><b class="mono">learning.log</b></div>
@@ -51,7 +56,7 @@
 
     <section class="section lab-grid-section">
       <div class="container">
-        <div class="section-heading compact-heading"><p class="section-index mono">01 — ACTIVE AREAS</p><h2>What I am strengthening right now.</h2></div>
+        <div class="section-heading compact-heading"><p class="section-index mono">01 — ACTIVE AREAS</p><h2>Current areas of exploration.</h2></div>
         <div class="lab-card-grid">
           <article class="lab-card reveal"><span class="lab-number mono">01</span><div class="lab-icon code-icon">&lt;/&gt;</div><h3>C# foundations</h3><p>Types, input handling, conditions, loops, methods, classes, and object-oriented concepts through small console projects.</p><div class="tag-list"><span>C#</span><span>.NET</span><span>OOP</span></div></article>
           <article class="lab-card reveal"><span class="lab-number mono">02</span><div class="lab-icon mobile-icon">▣</div><h3>Mobile product patterns</h3><p>Task flows, habits, multilingual interfaces, mobile navigation, and reusable components for cross-platform applications.</p><div class="tag-list"><span>Ionic</span><span>TypeScript</span><span>i18n</span></div></article>
@@ -65,8 +70,8 @@
       <div class="container learning-layout">
         <div class="learning-copy reveal">
           <p class="section-index mono">02 — LEARNING METHOD</p>
-          <h2>I understand concepts best by turning them into something visible.</h2>
-          <p>Instead of keeping learning separate from building, I use small projects to test each new concept. A console exercise becomes a calculator, a UI idea becomes a component, and an API lesson becomes a working data flow.</p>
+          <h2>From new concepts to working examples.</h2>
+          <p>Small projects turn new concepts into working examples: a console exercise becomes a calculator, an interface idea becomes a reusable component, and an API lesson becomes a working data flow.</p>
         </div>
         <ol class="learning-steps">
           <li class="reveal"><span class="mono">01</span><div><h3>Learn the concept</h3><p>Understand the purpose, syntax, and basic rules.</p></div></li>
@@ -84,6 +89,8 @@
     </section>
   </main>
 
+  <button type="button" class="back-to-top" aria-label="Back to top" hidden><span aria-hidden="true">↑</span></button>
+  <div class="copy-feedback" role="status" aria-live="polite" hidden></div>
   <footer class="site-footer">
     <div class="container footer-layout">
       <div><a class="brand footer-brand" href="index.html"><span>Israa</span><span class="brand-dot">.</span></a><p>Full-stack development, personal projects, and continuous learning.</p></div>
@@ -92,6 +99,14 @@
     </div>
   </footer>
 
+  <script src="translations.js"></script>
+  <script src="mini-apps.js"></script>
+  <script src="localization.js"></script>
   <script src="scripts.js"></script>
+  <script src="details.js"></script>
+  <script src="alive.js"></script>
+  <script src="window-controls.js"></script>
+  <script src="project-browser.js"></script>
+  <script src="sparkle.js"></script>
 </body>
 </html>
